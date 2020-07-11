@@ -1,13 +1,9 @@
-def reverse_each_word(phrase)
-  words = phrase.split(" ")
-#  reversed = []
-#  words.each do |word|
- #   reversed.push(word.reverse)
- # end
- # reversed.join(" ")
- 
-  words.collect do |word|
-    word.reverse!
+require 'pry'
+
+def reverse_each_word(string)
+  words = string.split(" ")
+  reverse = words.collect do |word|
+    word.reverse
   end
-  words.join(" ")
+  reverse.join(" ")
 end
